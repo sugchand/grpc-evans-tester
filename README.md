@@ -34,6 +34,11 @@ In this example the client will connect to a server that running locally on port
 
 The specific directory(-t) contains all the test inputs in json files. Only one input message is stored in single json file. i.e total number of json files in the directory is equal to the total number of input sets that user wanted to test.
 
+```
+    $ ls ./test
+    out.txt  RPC.txt  testInput2.json  testInput3.json  testInput.json  user.proto
+
+```
 The directory has also contain a file 'RPC.txt' which has the rpc name to be called.
 
 ```
