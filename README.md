@@ -27,7 +27,7 @@ The script has following command line options
  Eg:
 
 ```
-    $ python3 tester.py -p 5678 -t ./test/user.proto -d ./test
+    $ python3 tester.py -p 5678 -t /tmp/test /tmp/test/user.proto -d /tmp/test
 
 ```
 In this example the client will connect to a server that running locally on port 5678.
@@ -35,16 +35,15 @@ In this example the client will connect to a server that running locally on port
 The specific directory(-t) contains all the test inputs in json files. Only one input message is stored in single json file. i.e total number of json files in the directory is equal to the total number of input sets that user wanted to test.
 
 ```
-    $ ls ./test
-    out.txt  RPC.txt  testInput2.json  testInput3.json  testInput.json  user.proto
-
+    $ ls /tmp/test
+    out.txt  RPC.txt  test2.json  test3.json  test.json  user.proto
 ```
 The directory has also contain a file 'RPC.txt' which has the rpc name to be called.
 
 ```
-    $ cat ./test/RPC.txt 
+    $ cat -e /tmp/test/RPC.txt
     UserAuthProto.UserAuthService.AddUser
 
 ```
 
-After executing all the tests, the generated results are stored under same directory as './test/out.txt'
+After executing all the tests, the generated results are stored under same directory as '/tmp/test/out.txt'
