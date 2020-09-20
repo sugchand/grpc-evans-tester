@@ -27,7 +27,7 @@ The script has following command line options
  Eg:
 
 ```
-    $ python3 tester.py -p 5678 -t /tmp/test /tmp/test/user.proto -d /tmp/test
+    $ python3 tester.py -p 5678 -t /tmp/test/user.proto -d /tmp/test
 
 ```
 In this example the client will connect to a server that running locally on port 5678.
